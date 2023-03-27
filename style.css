@@ -94,8 +94,6 @@ textarea {
 img {
   max-width: 50px;
   max-height: 50px;
+  margin-left: 480px;
 }
 
-.left {
-  margin-left: 150px;
-}
