@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/08/17/59/painted-1809005_960_720.jpg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,14 +19,15 @@ a {
   color: #997CF4;
   text-decoration: inherit;
 }
-a:hover {
-  color: #CF0084;
-}
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #333;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius: 20px;
 }
 
 h1 {
@@ -38,29 +39,53 @@ h2 {
 }
 
 .inhalt {
-  text-align: center;
-  margin: auto;
+  text-align: left;
   font-size: 19px;
   font-family: "Vivaldi";
+  margin-left: 100px;
+  margin-bottom: 30px;
 }
 
 p {
   max-width: 600px;
-  text-align: center;
-  margin: auto;
+  text-align: left;
 }
 
 ul {
-  margin-left: auto;
+  text-align: left;
 }
 
 li {
   max-width: 600px;
+  min-width: 300px;
   text-align: left;
 }
 
 .impressum {
   font-size: 10px;
   margin-top: 50px;
-  text-align: center;
+  text-align: left;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.Kommentare {
+  text-align: left;
+  margin-left: 100px;
+}
+
+header {
+  margin-bottom: 50px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+textarea {
+  width: 350px;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  max-width: 350px;
+  min-width: 350px;
+  border-radius: 7px;
 }
