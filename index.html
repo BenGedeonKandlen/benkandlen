@@ -7,17 +7,16 @@
     <title>Vite App</title>
   </head>
   <body>
+  <main>
    <script type="module" src="/main.js"></script>
    <header>
-     <div>
-        <h2 class="header">Ben-Gedeon Kandlen</h2>
-        <a href="https://github.com/BenGedeonKandlen">
-         <img src="https://img.icons8.com/nolan/512/github.png" alt="GitHub Logo" class="header">
+        <h2 class="flex-item">Ben-Gedeon Kandlen</h2>
+        <a href="https://github.com/BenGedeonKandlen" class="flex-item">
+         <img src="/assets/images/github.svg" alt="GitHub Logo" />
         </a>
-        <a href="">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/settings-2856913-2377697.png?f=webp&w=256" alt="Einstellungen" class="header">
+        <a href="" class="flex-item">
+            <img src="/assets/images/settings.svg" alt="Einstellungen" class="setting-icon" />
         </a>
-     </div>
    </header>
    <div class="inhalt">
      <h1>Hallo, ich bin Ben.</h1>
@@ -38,13 +37,13 @@
      </ul>
      <p>Es gibt natürlich noch viel mehr Tipps, das hier waren nur einige.</p>
    </div>
-   <div class="inhalt">
+   <!--<div class="inhalt">
        <h2>Du willst eine Nachricht hinterlassen?</h2>
-   </div>
-   <form class="Kommentare" class="inhalt" action="https://benkandlen.netlify.app/" method="POST" netlify>
+   </div>-->
+   <!--<form class="Kommentare" class="inhalt" action="https://benkandlen.netlify.app/" method="POST" netlify>
        <textarea id="comments" name="comments" placeholder="Hier Nachricht eingeben..."></textarea>
        <input type="submit" value="Absenden" />
-   </form>
+   </form>-->
    <div class="impressum" class="inhalt">
      <h4>Impressum:</h4>
      <p>Ben-Gedeon Kandlen</p>
@@ -54,5 +53,6 @@
      <p>Mehr dazu auf der <a href="https://www.bmj.de/DE/Themen/FokusThemen/Urheberrecht/Urheberrecht_node.html">Seite</a> des Bundesministeriums für Justiz.</p>
      <p>Das Formular um eine Nachricht zu hinterlassen funktioniert leider noch nicht ganz. Vielen Dank für das Verständnis.</p>
    </div>
+  </main>
   </body>
 </html>
