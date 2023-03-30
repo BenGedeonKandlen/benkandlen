@@ -21,6 +21,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --white: #FFF;
+  --purple: #997CF4;
+  --bg: #151418;
+  --green: #1294A7;
 }
 
 * {
@@ -29,7 +33,7 @@
 }
 
 body {
-  background-color: #151418;
+  background-color: var(--bg);
   font-family: Gruppo;
   max-width: 100%;
   width: 100%;
@@ -48,6 +52,52 @@ header {
   justify-content: space-between;
 }
 
+/*neu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*neu*/
+
 .header-name {
   font-size: 30px;
 }
@@ -56,9 +106,76 @@ header {
   width: 35px;
 }
 
+.menu {
+  font-size: 32px;
+}
+/*toggle switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #333333;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #333333;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 h1 {
   font-family: Caveat;
   font-size: 55px;
+  color: var(--white);
 }
 
 .heading {
@@ -72,12 +189,12 @@ h1 {
 .personal-img {
   height: 300px;
   width: auto;
-  border: 15px solid #997CF4;
+  border: 15px solid var(--purple);
   border-radius: 10px;
 }
 
 h2 {
-  color: #997CF4;
+  color: var(--purple);
   margin-bottom: 10px;
   margin-top: 10px;
   font-family: Gruppo, serif;
@@ -90,7 +207,7 @@ h3 {
 
 a {
   font-weight: 500;
-  color: #997CF4;
+  color: var(--purple);
   text-decoration: inherit;
 }
 
@@ -104,6 +221,7 @@ p {
   text-align: left;
   margin-bottom: 5px;
   font-size: 22px;
+  color: var(--white);
 }
 
 ul {
@@ -114,6 +232,7 @@ li {
   max-width: 600px;
   min-width: 300px;
   text-align: left;
+  /*font-size: 22px;*/
 }
 
 .impressum {

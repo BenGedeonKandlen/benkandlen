@@ -16,9 +16,29 @@
         <a href="https://github.com/BenGedeonKandlen" class="flex-item">
          <img src="/assets/images/github.svg" alt="GitHub Logo" />
         </a>
-        <a href="" class="flex-item">
-            <img src="/assets/images/settings.svg" alt="Einstellungen" class="setting-icon" />
-        </a>
+        <div id="mySidenav" class="sidenav">
+            <h2 class="menu">Einstellungen</h2>
+            <p>Light Mode</p>
+            <label class="switch">
+                <input type="checkbox" onclick="changeColors()">
+                <span class="slider round"></span>
+            </label>
+            <a href="" class="flex-item"></a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+       <span onclick="openNav()">
+           <img src="/assets/images/settings.svg" alt="Einstellungen" class="setting-icon" />
+       </span>
+       <script>function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+       }
+       function changeColors(){
+
+       }
+
+       function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+       }</script>
    </header>
    <div class="inhalt">
      <div class="heading">
