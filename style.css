@@ -31,6 +31,9 @@
 body {
   background-color: #151418;
   font-family: Gruppo;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 main {
@@ -121,4 +124,42 @@ li {
 .bottom {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media(max-width: 768px){
+  .heading {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  h2{
+    font-size: 32px;
+  }
+
+  .header-name {
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    justify-content: normal;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  header a {
+    width: 100%;
+  }
+
+  header .flex-item{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
 }
